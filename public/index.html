@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Covid Map Central</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <a class="nav-brand">Covid Map Central</a>
+        <li class="nav-item"><a class="nav-link" target="_blank"
+          href="https://www.vaccines.gov/search/">Vaccines</a></li> 
+        <li class="nav-item"><a class="nav-link" href="https://covidmapcentral-map.netlify.app/">Map</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <div class="header">
+        <div class="title">
+          <img class="icon" src="images/virusIcon.webp">
+          <h1 class="headTitle">COVID MAP CENTRAL</h1>
+        </div>
+   <!-- <div class="BtnNav">
+          <div class ="DocBtns">
+            <button class="Btns" onClick="document.getElementById('currentCases').scrollIntoView();">Cases</button>
+            <button class="Btns" onClick="document.getElementById('spread').scrollIntoView();">Spread</button>
+            <button class="Btns" onClick="document.getElementById('prediction').scrollIntoView();">Predictions</button>
+          </div>
+        </div>-->
+      </div>
+
+      
+      <div class="Cases" id="currentCases">
+        <h2 class="casesTitle">Current COVID-19 Cases</h2>
+        <div id="root"></div>
+      </div>
+
+      <!-- <div class="Spread" id="spread">
+        <h2 class="spreadTitle">Current State of Spread by Geographical Location</h2>
+         current state of spread in a table by geographical location
+        <div class="spreadTable">
+           <div class="currentState" id="regions_div" style="width: 900px; height: 500px;"></div> 
+        </div>
+         current state in a graph which updates as user selects a geographical region 
+        <div class="spreadGraph">
+          <h3>Graph</h3>
+           <div id="line_top_x"></div>
+        </div>
+      </div>
+
+       prediction/rate of change (doubling every 2 hours, or havling every 4 days)
+      <div class="prediction" id="prediction">
+        <h2>Predictions/Rate of Change</h2>
+        
+         predicted actual cases (not just confirmed)
+        <div class="actualPrediction" id="actualPrediction">
+          <h3>Prediction/Rate of Change of Actual Cases</h3>
+        </div>
+      </div> -->
+
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-nav">
+            <ul class="bot-nav">
+              <li class="bot-nav-item">Sources Used</li>
+              <li class="bot-nav-item"><a href="https://disease.sh/docs/#/" target="_blank">https://disease.sh/docs/#/</a></li>
+              <li class="bot-nav-item"><a href="https://covid19.mathdro.id/api" target="_blank">https://covid19.mathdro.id/api</a></li>
+              <li class="bot-nav-item"><a href=""></a>©2021 Golden Wind Designs</li>
+            </ul>
+        </div>
+    </footer>
+  </body>
+</html>
